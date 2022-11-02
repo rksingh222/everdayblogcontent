@@ -305,6 +305,7 @@
             object-fit: cover;
             background: #D3E3E2;
         }
+
         /*image slider */
 
         code {
@@ -314,12 +315,153 @@
         }
 
         /*line track */
-        .linetrack{
+        .linetrack {
             height: 200px;
-            background: turquoise;
+            background: #f5f2f0;
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .linetrack::after {
+            content: '';
+            position: absolute;
+            top: 30%;
+            right: 0;
+            width: 100%;
+            height: 14px;
+            margin-top: -7px;
+            border: 2px solid lightgray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .firstpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 30px;
+            margin-top: -20px;
+        }
+
+        .firstpoint::after {
+            content: 'Bombala Street';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        .secondpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 140px;
+            margin-top: -20px;
+        }
+
+        .secondpoint::after {
+            content: 'Davis Road';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        .thirdpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 250px;
+            margin-top: -20px;
+        }
+
+        .thirdpoint::after {
+            content: 'Leakes Road';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        .fourthpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 360px;
+            margin-top: -20px;
+        }
+
+        .fourthpoint::after {
+            content: 'Kororoit Creek Road';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        .fifthpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 470px;
+            margin-top: -20px;
+        }
+
+        .fifthpoint::after {
+            content: 'Victoria Street';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        .sixthpoint {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 30%;
+            left: 580px;
+            margin-top: -20px;
+        }
+
+        .sixthpoint::after {
+            content: 'WilliamsTown Beach';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        /*line track */
+
+        /*line track 2 */
+        .linetrack1 {
+            margin-top: 20px;
+            height: 200px;
+            background: #f5f2f0;
+            ;
             position: relative;
         }
-        .linetrack::after{
+
+        .linetrack1::after {
             content: '';
             position: absolute;
             top: 50%;
@@ -330,9 +472,10 @@
             border: 2px solid lightgray;
             box-sizing: border-box;
         }
-        .firstpoint{
+
+        .firstpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -340,16 +483,18 @@
             left: 30px;
             margin-top: -20px;
         }
-        .firstpoint::after{
-            content: 'Bombala Street';
+
+        .firstpoint1::after {
+            content: 'Davis Rd';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        .secondpoint{
+
+        .secondpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -357,16 +502,18 @@
             left: 140px;
             margin-top: -20px;
         }
-        .secondpoint::after{
-            content: 'Davis Road';
+
+        .secondpoint1::after {
+            content: 'Hogans Road';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        .thirdpoint{
+
+        .thirdpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -374,16 +521,18 @@
             left: 250px;
             margin-top: -20px;
         }
-        .thirdpoint::after{
-            content: 'Leakes Road';
+
+        .thirdpoint1::after {
+            content: 'Tarneit Road';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        .fourthpoint{
+
+        .fourthpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -391,16 +540,18 @@
             left: 360px;
             margin-top: -20px;
         }
-        .fourthpoint::after{
-            content: 'Kororoit Creek Road';
+
+        .fourthpoint1::after {
+            content: 'Wattle Avenue';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        .fifthpoint{
+
+        .fifthpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -408,16 +559,18 @@
             left: 470px;
             margin-top: -20px;
         }
-        .fifthpoint::after{
-            content: 'Victoria Street';
+
+        .fifthpoint1::after {
+            content: 'Wattle Avenue';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        .sixthpoint{
+
+        .sixthpoint1 {
             border-radius: 50%;
-            border: 10px solid wheat;
+            border: 10px solid #e0e0e0;
             width: 40px;
             height: 40px;
             position: absolute;
@@ -425,14 +578,33 @@
             left: 580px;
             margin-top: -20px;
         }
-        .sixthpoint::after{
-            content: 'WilliamsTown Beach';
+
+        .sixthpoint1::after {
+            content: 'Edwards Rd';
             position: absolute;
             top: 40px;
             left: -10px;
             font-size: 20px;
         }
-        /*line track */
+
+        .seventhpoint1 {
+            border-radius: 50%;
+            border: 10px solid #e0e0e0;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 690px;
+            margin-top: -20px;
+        }
+
+        .seventhpoint1::after {
+            content: 'Duncans Rd';
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -472,27 +644,29 @@
                         <div class="text">williamstown beach</div>
                     </div>
                     <div class="source fade">
-                        <div class="numbertext">23 October 2022</div>
+                        <div class="numbertext">31 October 2022</div>
                         <img src="./assets/williamstown-beach/20221031_162824.jpg" class="image">
                         <div class="text">williamstown beach</div>
                     </div>
                     <div class="source fade">
-                        <div class="numbertext">23 October 2022</div>
-                        <img src="./assets/williamstown-beach/20221031_163037.jpg" style="object-fit: contain;" class="image">
+                        <div class="numbertext">31 October 2022</div>
+                        <img src="./assets/williamstown-beach/20221031_163037.jpg" style="object-fit: contain;"
+                            class="image">
                         <div class="text">williamstown beach</div>
                     </div>
                     <div class="source fade">
-                        <div class="numbertext">23 October 2022</div>
-                        <img src="./assets/williamstown-beach/20221031_163137.jpg" style="object-fit: contain;" class="image">
+                        <div class="numbertext">31 October 2022</div>
+                        <img src="./assets/williamstown-beach/20221031_163137.jpg" style="object-fit: contain;"
+                            class="image">
                         <div class="text">williamstown beach</div>
                     </div>
                     <div class="source fade">
-                        <div class="numbertext">23 October 2022</div>
+                        <div class="numbertext">31 October 2022</div>
                         <img src="./assets/williamstown-beach/20221031_163233.jpg" class="image">
                         <div class="text">williamstown beach</div>
                     </div>
                     <div class="source fade">
-                        <div class="numbertext">23 October 2022</div>
+                        <div class="numbertext">31 October 2022</div>
                         <img src="./assets/williamstown-beach/20221031_163236.jpg" class="image">
                         <div class="text">williamstown beach</div>
                     </div>
@@ -502,10 +676,8 @@
                     <span class="left" onclick="plusSlides(-1)"><i class="fa-solid fa-less-than"></i></span>
                     <span class="right" onclick="plusSlides(1)"><i class="fa-solid fa-greater-than"></i></span>
                 </div>
-                <p>This blog will run you through 3 ways to initialize a JavaScript Array with conditional elements.</p>
-                <h3>1. Create and spread an array inside the array</h3>
-                <p>This method involves spreading an new array inside ofthe array with the ternary operator.</p>
 
+                <h3>My story of visit in bicycle to weribee beach approximately 18km</h3>
                 <div class="linetrack">
                     <div class="firstpoint"></div>
                     <div class="secondpoint"></div>
@@ -514,13 +686,68 @@
                     <div class="fifthpoint"></div>
                     <div class="sixthpoint"></div>
                 </div>
-                <pre class="code-text">
-                    <code>
-    const myArray = [
-        'a', 'b', 'c', 'd',
-        <strong>... condition</strong> ? ['e'] : [],
-        ];</code>
-    </pre>
+                <p>
+                    On 23rd of October 2022 i was very curious to visit a beach because i spend most of my time
+                    staying in the house in Melbourne. First of all last five years i was in bit of dilemma and
+                    my health deteriorated somehow i got a chance to travel to melbourne and i decided to visit
+                    this werribee south beach first.I am thankful to the people who brought me here.
+                </p>
+                <p>
+                    I don't have money for now i am just penniless and i have to borrow money from people which
+                    is not working. so i decided to visit the beach by bicycle. Sometimes i feel if i had money and
+                    I was independent then things would have been different. I do not need to take someones order.
+                    Someone brainwashed me and did not give me idea that once i have a job in my bucket i should not
+                    give up and should not do further studies. Anyways it taught me something but i need money and
+                    for now lets go further in the story. I borrowed the cycle and it was my first visit so i was
+                    doubtful in one hand but in the other hand i wanted to visit the beach. So i did not think twice
+                    i just took the cycle and rode towards the tarneit road but in the middle i got distracted and
+                    fell from cycle. I was injured this was not my first time it happened before also. I am quite
+                    used to it. I did not get distracted. I continued my travelling. I began from the point i fell.
+                    The cycle chain got out from its position and i had to fix it again. I saw a shopping store just
+                    right of me and it had around 15 stores such as My Clinic, Roll & Roast Made Easy, Weribee Bakery,
+                    laundry, chemist, SIMS Liquor, Barber Ambitious Hair Salon, Golden place Chinese Restaurant.
+                </p>
+                <p>
+                    Ok i got up. I got bruises in my right leg and i had bit of blood and my pant got dirty a bit but 
+                    it was just in the middle of my right part of pant. I felt nervous but i got up and started moving
+                    towards edward road. i found some native people from australia and i shook my hand towards them.
+                    I was happy that my cycle is still working because after falling it was in critical condition.
+                    I just thought that i have to go because my life is not so important after all. I have already
+                    been in critical condition by falling or in some other means. I have fallen many times but getting
+                    up again was very difficult. But some people helped me many times to come out of this. Then 
+                    I reached wattle avenue and edwards Road. Reaching to Duncans road my google map was giving me a
+                    location but it had three roads and all of them were going in different direction. So i stopped
+                    near the duncan road while the bridge was near. I asked some people they were not ready to tell me
+                    i had to wait for someone because every one was driving a car and the mirrors were closed. I waited
+                    for some to respond. Atlast i found a person driving car with his girlfriend or may be wife. He told
+                    me to follow the bridge. I followed the duncan bridge and somehow still it was confusing. When i finished
+                    travelling the bridge it had three ways one was to my left and to my right and straight. I decided to 
+                    go right but when i tried to find it from google map it was giving me wrong direction. So i better 
+                    felt to ask from a lady who was driving car as she stopped when the traffic lights had a red signal
+                    she was chinese by look but she did not respond. Then there was another lady who also stopped she told 
+                    me to go straight . I moved straight and while i was riding cycle i was tired as it was bit sunny 
+                    and it was a upward stream. the location when i was travelling after the bridge was a farming laund
+                    and had no houses. I was bit sceptical whether i will reach. And then after travelling 6 km more i 
+                    found the beach. When i reached the beach i asked a native to take my picture.He took my picture
+                    As it was around 5:00 pm i had a plan not to stay more because i had to travel 18km back to reach 
+                    and take a rest as i was already tired.
+                    I saw a girl who were enjoying in their car near the beach when i was there. Also i saw some more people
+                    there. However the it was not crowded as its winter and the water is pretty cold.
+                    I took a turn and started travelling back to bombala street with the same road. And i reached it was 
+                    a tiresome journey. My advice if you are travelling to this beach don't go on a cycle because it does
+                    not have a cycle path for around 10km. 
+                    Have a nice day take care
+                </p>
+                <p></p>
+                <div class="linetrack1">
+                    <div class="firstpoint1"></div>
+                    <div class="secondpoint1"></div>
+                    <div class="thirdpoint1"></div>
+                    <div class="fourthpoint1"></div>
+                    <div class="fifthpoint1"></div>
+                    <div class="sixthpoint1"></div>
+                    <div class="seventhpoint1"></div>
+                </div>
             </div>
 
 
