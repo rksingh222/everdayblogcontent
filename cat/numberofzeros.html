@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {}
+
+        .flex-outer-layout {
+            display: flex;
+        }
+
+        .flex-outer-layout .first-layout {
+            flex: 6%;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section .image1 {
+            position: relative;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section .image2 {
+            position: relative;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section .image1hover:hover .image1::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 10px;
+            width: 0;
+            z-index: 1;
+            right: -8px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 10px;
+            border-color: transparent black transparent transparent;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section:hover .image1hover:hover .image1::before {
+            content: "Home";
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: -68px;
+            width: 60px;
+            height: 40px;
+            background: black;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section .image2hover:hover .image2::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 10px;
+            width: 0;
+            z-index: 1;
+            right: -8px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 10px;
+            border-color: transparent black transparent transparent;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section .image2hover:hover .image2::before {
+            content: "Back";
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: -68px;
+            width: 60px;
+            height: 40px;
+            background: black;
+        }
+
+        /*.flex-outer-layout .first-layout .first-layout-section:hover .flex-outer-layout .first-layout .first-layout-section::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top:10px;
+            width: 0;
+            z-index: 1;
+            right: -8px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 10px;
+            border-color: transparent black transparent transparent;
+        }*/
+
+        .flex-outer-layout .first-layout .first-layout-section:hover .first-layout-section::after {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 10px;
+            width: 0;
+            z-index: 1;
+            right: -8px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 10px;
+            border-color: transparent black transparent transparent;
+        }
+
+        .flex-outer-layout .first-layout .first-layout-section:hover .flex-outer-layout .first-layout .first-layout-section::before {
+            content: "Home";
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: -68px;
+            width: 60px;
+            height: 40px;
+            background: black;
+        }
+
+
+        .flex-outer-layout .second-layout {
+            flex: 69%;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .flex-outer-layout .third-layout {
+            flex: 25%;
+        }
+
+        .flex-outer-layout .second-layout .flex-blog-info {
+            display: flex;
+            flex-direction: column;
+            background: green;
+        }
+
+        .flex-outer-layout .second-layout .blog-logo-section {
+            padding: 10px 100px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+        }
+
+        .flex-outer-layout .second-layout .blog-logo-section .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            line-height: 35px;
+            color: #e0e0e0;
+        }
+
+        .flex-outer-layout .second-layout .blog-logo-section .logo-text {
+            padding-left: 20px;
+            color: #888;
+        }
+
+        .flex-outer-layout .second-layout .blog-logo-section .logo-text span {
+            color: black;
+        }
+
+        .flex-outer-layout .second-layout .blog-text-section {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 100px;
+            /*letter-spacing: -0.016em;*/
+            letter-spacing: -0.256px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .flex-outer-layout .second-layout .blog-text-section img {
+            margin-top: 20px;
+
+            width: 100%;
+            height: 400px;
+        }
+
+        .flex-outer-layout .second-layout .blog-text-section p {
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: normal;
+            color: rgba(41, 41, 41, 1);
+            word-wrap: break-word;
+            font-weight: 200;
+            line-height: 32px;
+            letter-spacing: -0.003em;
+        }
+
+        .flex-outer-layout .second-layout .blog-text-section h3 {
+            margin-top: 60px;
+            line-height: 28px;
+            font-size: 22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .flex-outer-layout .second-layout .blog-text-section .code-text {
+            background: #f5f2f0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: normal;
+            color: rgba(41, 41, 41, 1);
+            word-wrap: break-word;
+            font-weight: 200;
+            line-height: 24px;
+            letter-spacing: -0.003em;
+            margin-top: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        code {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-outer-layout">
+        <div class="first-layout">
+            <div class="first-layout-section">
+                <div class="image1hover">
+                    <div class="image1">
+                        <img src="./assets/download.png" width="40px" height="40px">
+                    </div>
+                </div>
+                <div class="image2hover">
+                    <div class="image2">
+                        <img src="./assets/back.png" width="35px" height="35px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-layout">
+            <div class="blog-logo-section">
+                <span class="logo">code</span>
+                <h4 class="logo-text">Published in <span>Code2Learn</span></h4>
+            </div>
+            <div class="blog-text-section">
+                <h1>Calculating number of zeros</h1>
+                <img src="../assets/number.jpg"></img>
+                <h3>45! has how many zeros</h3>
+                <p>first it is to analyse how can we get zeros and that is possible with 5 and 2. if we can find how
+                    many 5's a number has then its possible to calculate the number of zeros
+                </p>
+                <p>In a 45! we have 1*2*3*4*5.....so on till 45. Here we have one five when we count from 1 till 5 and
+                    from 6 to 10 we count 1 more 5 so from 1 to 10 we have two 5's.till 20 we have four 5's but when it
+                    comes to 25 we have two 5's. till 25! we have six 5's and till 45 we will have ten 5's </p>
+                <p>45! will have ten zeros as we found ten 5's </p>
+                <h3>100<sup>1</sup> * 99<sup>2</sup> * 98<sup>3</sup> * ..... * 1<sup>100</sup> has how many zeros</h3>
+                <p>finding this will be a complex process. Lets make it simple first count number of single fives in
+                    this format
+                    in first 100^1 will have 2 fives but we consider only 1 five and the next number which will have 5
+                    is 95^6 moreover
+                    the next number which will have 5 is 90^11 and so on till 5^96). we count number of 5's . since its
+                    a power like
+                    5<sup>1</sup> * 5<sup>6</sup> which gets added i.e 1 + 6.
+                    It makes a A.P 1 + 6 + 11 + . . . + 96
+                    find n first in this A.P
+                </p>
+                <pre class="code-text">
+                    <code>
+    a<sub>n</sub> = a<sub>1</sub> + (n - 1) * d;
+    96 = 1 + (n-1) * 5
+    95/5 = n-1
+    20 = n
+   </code>
+    </pre>
+                <p>Lets calculate the sum of A.P</p>
+                <pre class="code-text">
+        <code>
+    sum of A.P= n/2(first A.P + last A.P)
+    sum = 20/2(1+96) = 970
+</code>
+</pre>
+                <p>left part is two fives which are remaining to be added. so first 100<sup>2</sup> will have 1 more
+                    five and
+                    75<sup>26</sup> will have 1 more 5 and 50<sup>51</sup> will have one more 5 and 25<sup>76</sup> will
+                    have one more 5
+                </p>
+                <p>1 + 26 + 51 + 76 with a common difference of 25 makes it a A.P</p>
+                <pre class="code-text">
+                    <code>
+    sum of A.P= n/2(first A.P + last A.P)
+    sum = 4/2(1+76) = 154
+            </code>
+            </pre>
+            <p>sum of 970 + 154 =  1124 zeros are there in the given mathematical expression</p>
+            </div>
+
+        </div>
+        <div class="third-layout">
+
+        </div>
+    </div>
+</body>
+
+</html>
